@@ -14,15 +14,20 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('styles')
+    <style>
+        .fl-wrapper[data-position='top-center'] {
+            z-index: 100;
+        }
+    </style>
 </head>
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         <!-- Page Content -->
-        <main>
-            {{ $slot }}
-        </main>
+        {{ $slot }}
     </div>
+    @stack('scripts')
 </body>
 
 </html>
