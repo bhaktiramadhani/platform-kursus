@@ -2,7 +2,7 @@
     <x-header-layout />
     <div class="p-4 sm:ml-64">
         <div class="mt-14">
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <form class="bg-white rounded-lg p-4 max-w-sm" action="{{ route('kursus.update', $kursus->id) }}"
                     method="post">
                     <h1 class="font-bold text-2xl mb-2">Edit Kursus</h1>
@@ -194,7 +194,7 @@
                                 placeholder="https://..." required />
                         </div>
                         <button type="submit"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tambah
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Edit
                             Materi</button>
                     </form>
                 </div>
